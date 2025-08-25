@@ -1,0 +1,43 @@
+﻿@model StudyHelperMVC.Controllers.LibraryPageModel
+
+<h2>Библиотека</h2>
+
+<h3>Лекции</h3>
+<table>
+    <thead>
+        <tr><th>Имя</th><th>Предмет</th><th>Действия</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var lec in Model.Lectures)
+        {
+            <tr>
+                <td>@lec.FileName</td>
+                <td>@lec.Subject?.Name</td>
+                <td>
+                    <a href="@Url.Action("DetailsLecture", "Library", new { id = lec.Id })">Просмотр</a> |
+                    <a href="@Url.Action("DeleteLecture", "Library", new { id = lec.Id })">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Упражнения</h3>
+<table>
+    <thead>
+        <tr><th>Имя</th><th>Предмет</th><th>Действия</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var ex in Model.Exercises)
+        {
+            <tr>
+                <td>@ex.FileName</td>
+                <td>@ex.Subject?.Name</td>
+                <td>
+                    <a href="@Url.Action("DetailsExercise", "Library", new { id = ex.Id })">Просмотр</a> |
+                    <a href="@Url.Action("DeleteExercise", "Library", new { id = ex.Id })">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

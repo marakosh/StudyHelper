@@ -1,19 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace StudyHelperMVC.Models;
+﻿namespace StudyHelperMVC.Models;
 
 public class LectureModel
 {
     public int Id { get; set; }
-
-    [Required]
     public string FileName { get; set; } = string.Empty;
-
-    [Required]
     public string Summary { get; set; } = string.Empty;
 
-    // Связь с предметом
-    [Required]
     public int SubjectId { get; set; }
-    public virtual SubjectModel Subject { get; set; } = null!;
+    public SubjectModel Subject { get; set; } = null!;
 }

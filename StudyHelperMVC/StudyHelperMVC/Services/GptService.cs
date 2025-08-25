@@ -1,6 +1,7 @@
 ﻿using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
+using System.Net.Http.Json;
 
 namespace StudyHelperMVC.Services;
 
@@ -15,6 +16,7 @@ public class GptService
         _config = config;
     }
 
+    // Простая генерация (как у тебя было)
     public async Task<string> ChatSingleAsync(string userPrompt, string system = "", int? maxOutputTokens = null)
     {
         var client = _httpClientFactory.CreateClient();
@@ -54,111 +56,80 @@ public class GptService
                   .GetString() ?? string.Empty;
     }
 
-    // Prompts
-
-
-    public async Task<string> CompileExercisesSummaryAsync(List<string> chunkSummaries)
+    // Генерация текста в реальном времени (streaming)
+    public async IAsyncEnumerable<string> StreamChatCompletionAsync(
+        string userPrompt,
+        string system = "",
+        int? maxOutputTokens = null)
     {
-        var combined = string.Join("\n\n", chunkSummaries);
-        var prompt = $$"""
-Ты — интеллектуальный ассистент для студентов. Тебе даётся текст упражнений из учебного материала (например, из PDF). 
-Выполни следующие шаги:
+        var client = _httpClientFactory.CreateClient();
+        var apiKey = _config["OpenAI:ApiKey"] ?? "";
+        var model = _config["OpenAI:Model"] ?? "gpt-4o-mini";
+        var maxTokens = maxOutputTokens ?? int.Parse(_config["OpenAI:MaxOutputTokens"] ?? "700");
 
-1. Разбери каждое упражнение, представленное в тексте.
-2. Для каждого упражнения:
-   - Сначала перепиши его в удобной нумерованной форме (чтобы сохранить структуру).
-   - Создай 1–2 **новых дополнительных задания по той же теме**, но с другими условиями (так, чтобы студент мог попрактиковаться, но тема оставалась та же).
-   - Новые задания должны отличаться числами, формулировкой или контекстом, но проверять то же знание/навык.
-3. После того как все упражнения и дополнительные задания сгенерированы, выполни блок:
-   **Ответы и объяснения:**
-   - Для каждого упражнения (и для каждого дополнительного задания) запиши правильный ответ.
-   - Под каждым ответом дай краткое объяснение: какое правило, закон, формулу или метод нужно применить для решения.
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
-⚠️ Важно:
-- Не придумывай упражнения «не по теме». Всегда держись того же типа, что и в исходном упражнении.
-- Формулировка новых заданий должна быть максимально естественной, как в учебниках.
-- Объяснения должны быть короткими, но полезными для понимания.
+        var payload = new
+        {
+            model,
+            messages = new object[]
+            {
+                new { role = "system", content = system },
+                new { role = "user", content = userPrompt }
+            },
+            max_tokens = maxTokens,
+            temperature = 0.2,
+            stream = true
+        };
 
-Пример структуры вывода:
+        using var request = new HttpRequestMessage(HttpMethod.Post, "https://api.openai.com/v1/chat/completions");
+        request.Content = JsonContent.Create(payload);
 
----
-**Упражнения:**
+        using var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+        response.EnsureSuccessStatusCode();
 
-1. [Исходное упражнение 1]
-   - Доп. задание 1
-   - Доп. задание 2
+        using var stream = await response.Content.ReadAsStreamAsync();
+        using var reader = new StreamReader(stream);
 
-2. [Исходное упражнение 2]
-   - Доп. задание 1
-   - Доп. задание 2
+        while (!reader.EndOfStream)
+        {
+            var line = await reader.ReadLineAsync();
+            if (string.IsNullOrWhiteSpace(line)) continue;
+            if (line.StartsWith("data: "))
+            {
+                var jsonPart = line.Substring("data: ".Length);
+                if (jsonPart == "[DONE]") break;
 
-...
+                using var doc = JsonDocument.Parse(jsonPart);
+                var delta = doc.RootElement
+                               .GetProperty("choices")[0]
+                               .GetProperty("delta");
 
-**Ответы и объяснения:**
-
-1. Ответ: ...
-   Объяснение: ...
-
-1.1 (доп. задание): Ответ: ...
-     Объяснение: ...
-
-1.2 (доп. задание): Ответ: ...
-     Объяснение: ...
-
-2. Ответ: ...
-   Объяснение: ...
-
-...
----
-{{combined}}
-""";
-        return await ChatSingleAsync(prompt, "Ты структурируешь упражнения.", maxOutputTokens: 3000);
+                if (delta.TryGetProperty("content", out var content))
+                    yield return content.GetString() ?? "";
+            }
+        }
     }
 
-
-
-
+    // Пример конспекта лекции
     public async Task<string> CompileLectureSummaryAsync(List<string> chunkSummaries)
     {
         var combined = string.Join("\n\n", chunkSummaries);
         var prompt = $$"""
-Ты — помощник студента, задача которого — создавать **конспекты из лекций**. Тебе предоставляется выжимка из уже сжатых частей лекции. Выполни следующие шаги:
-
-1. Сократи текст лекции до **максимально компактного конспекта**, сохрани всю важную информацию и ключевые понятия.
-2. Структурируй конспект так, чтобы легко было читать и повторять. Можешь использовать списки, заголовки, подпункты.
-3. В конце конспекта:
-   a) Выпиши все **формулы**, которые встречались в тексте, укажи их **названия или к чему они относятся**, если это возможно.
-   b) Выпиши **ключевые слова** из лекции отдельным списком в столбик.
-   c) Выпиши нужные вопросы по лекции. 
-4. Не добавляй лишнюю информацию — только то, что содержится в лекции.
-
-Пример структуры вывода:
-
----
-**Конспект:**
-- Краткая суть темы 1
-- Краткая суть темы 2
-...
-
-**Формулы:**
-1. Формула 1 — Название или назначение
-2. Формула 2 — Название или назначение
-...
-
-**Ключевые слова:**
-- слово1
-- слово2
-- слово3
-...
-
-**Вопросы по лекции:**
-- Вопрос 1
-- Вопрос 2
-- Вопрос 3
-...
----
+Ты — помощник студента, задача которого — создавать конспекты из лекций. Текст: 
 {{combined}}
 """;
         return await ChatSingleAsync(prompt, "Ты структурируешь конспекты лекций.", maxOutputTokens: 3000);
+    }
+
+    // Пример упражнений
+    public async Task<string> CompileExercisesSummaryAsync(List<string> chunkSummaries)
+    {
+        var combined = string.Join("\n\n", chunkSummaries);
+        var prompt = $$"""
+Ты — помощник студента, задача которого — структурировать упражнения. Текст: 
+{{combined}}
+""";
+        return await ChatSingleAsync(prompt, "Ты структурируешь упражнения.", maxOutputTokens: 3000);
     }
 }

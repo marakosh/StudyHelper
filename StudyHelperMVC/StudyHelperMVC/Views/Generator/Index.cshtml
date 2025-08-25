@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Генератор";
+}
+
+<h2>Генератор лекций и упражнений</h2>
+
+<select id="type">
+    <option value="lecture">Лекция</option>
+    <option value="exercise">Упражнение</option>
+</select>
+
+<input type="text" id="fileName" placeholder="Имя файла" style="width:100%; margin:5px 0;" />
+
+<textarea id="inputText" rows="10" style="width:100%" placeholder="Вставьте текст здесь"></textarea>
+
+<button id="generateBtn">Сгенерировать</button>
+
+<h3>Результат:</h3>
+<pre id="output" style="white-space: pre-wrap; border:1px solid #ccc; padding:10px;"></pre>
+
+<button id="saveBtn" disabled>Сохранить в библиотеку</button>
+
+@section Scripts {
+    <script>
+        let generatedContent = "";
+
+        document.getElementById("generateBtn").onclick = async () => {
+            const type = document.getElementById("type").value;
+            const text = document.getElementById("inputText").value;
+            document.getElementById("generateBtn").disabled = true;
+
+            const resp = await fetch('@Url.Action("Generate", "Generator")', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ type, text })
+            });
+
+            const data = await resp.json();
+            generatedContent = data.result;
+            document.getElementById("output").innerText = generatedContent;
+            document.getElementById("saveBtn").disabled = false;
+            document.getElementById("generateBtn").disabled = false;
+        };
+
+        document.getElementById("saveBtn").onclick = async () => {
+            const type = document.getElementById("type").value;
+            const fileName = document.getElementById("fileName").value;
+            const subjectId = 1; // временно, можно добавить выбор предмета
+            const resp = await fetch('@Url.Action("Save", "Generator")', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ type, fileName, content: generatedContent, subjectId })
+            });
+            const result = await resp.json();
+            alert(result.message);
+        };
+    </script>
+}

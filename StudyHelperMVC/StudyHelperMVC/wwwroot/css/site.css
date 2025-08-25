@@ -1,22 +1,142 @@
+﻿/* Общие стили */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
-  margin-bottom: 60px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background-color: #f7f9fb;
+}
+
+/* Боковая панель */
+.sidebar {
+    width: 260px;
+    background-color: #056679;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 30px 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+    .sidebar .logo img {
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .sidebar nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .sidebar nav ul li {
+            margin-bottom: 20px;
+        }
+
+            .sidebar nav ul li a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+                padding: 12px 15px;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+
+                .sidebar nav ul li a:hover {
+                    background-color: #3CA3B0;
+                    color: #fff;
+                }
+
+/* Основной контент */
+.main-content {
+    margin-left: 260px;
+    padding: 30px 40px;
+}
+
+header h1 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    color: #056679;
+}
+
+/* Карточки лекций и упражнений */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+    min-width: 280px;
+}
+
+    .card h3 {
+        margin-top: 0;
+        color: #056679;
+    }
+
+    .card pre {
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+
+/* Кнопки */
+.btn-primary {
+    background-color: #056679;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #3CA3B0;
+    }
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 20px 15px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .sidebar nav ul li a {
+        font-size: 16px;
+    }
 }

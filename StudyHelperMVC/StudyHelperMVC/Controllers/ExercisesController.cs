@@ -28,7 +28,6 @@ public class ExercisesController : Controller
             return View();
         }
 
-        // Извлекаем текст из PDF
         string text;
         using (var stream = file.OpenReadStream())
         {
@@ -41,31 +40,31 @@ public class ExercisesController : Controller
             return View();
         }
 
-        // Разбиваем на чанки
+        // Чанкуем
         var chunks = _chunker.Split(text, 4000);
-        var partialExercises = new List<string>();
+        var partials = new List<string>();
 
-        // Генерируем упражнения для каждого чанка
         foreach (var chunk in chunks)
         {
-            var exercisesChunk = await _gpt.ChatSingleAsync(
+            var part = await _gpt.ChatSingleAsync(
                 $$"""
-Ты — интеллектуальный ассистент для студентов. Извлеки все упражнения из фрагмента текста и подготовь их в удобной нумерованной форме.
-Фрагмент:
+Проанализируй этот блок упражнений/примеров и кратко перечисли виды задач,
+которые тут встречаются (по 1–2 предложения на каждый вид).
+Блок:
 {{chunk}}
 """,
-                "Создавай упражнения и задания."
+                "Ты выделяешь типы задач из методичек."
             );
-            partialExercises.Add(exercisesChunk);
+            partials.Add(part);
         }
 
-        // Финальный промпт — объединяем все чанки
-        var finalExercises = await _gpt.CompileExercisesSummaryAsync(partialExercises);
+        // Финальная сборка — промпт для генерации новых задач + ответы/объяснения
+        var exercisesText = await _gpt.CompileExercisesSummaryAsync(partials);
 
         var model = new ExerciseModel
         {
             FileName = file.FileName,
-            Content = finalExercises
+            ExercisesText = exercisesText
         };
 
         return View("Result", model);
