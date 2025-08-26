@@ -1,43 +1,71 @@
-﻿@model StudyHelperMVC.Controllers.LibraryPageModel
+﻿@model StudyHelperMVC.Models.LibraryViewModel
+@{
+    ViewData["Title"] = "Библиотека";
+}
 
 <h2>Библиотека</h2>
 
-<h3>Лекции</h3>
-<table>
-    <thead>
-        <tr><th>Имя</th><th>Предмет</th><th>Действия</th></tr>
-    </thead>
-    <tbody>
-        @foreach (var lec in Model.Lectures)
+<h3>Предметы</h3>
+@if (Model.Subjects.Count == 0)
+{
+    <p>Пока нет предметов.</p>
+}
+else
+{
+    <ul>
+        @foreach (var s in Model.Subjects)
         {
-            <tr>
-                <td>@lec.FileName</td>
-                <td>@lec.Subject?.Name</td>
-                <td>
-                    <a href="@Url.Action("DetailsLecture", "Library", new { id = lec.Id })">Просмотр</a> |
-                    <a href="@Url.Action("DeleteLecture", "Library", new { id = lec.Id })">Удалить</a>
-                </td>
-            </tr>
+            <li>@s.Name (Лекций: @s.Lectures.Count, Упражнений: @s.Exercises.Count)</li>
         }
-    </tbody>
-</table>
+    </ul>
+}
+
+<h3>Лекции</h3>
+@if (Model.Lectures.Count == 0)
+{
+    <p>Пока нет сохранённых конспектов.</p>
+}
+else
+{
+    <ul>
+        @foreach (var l in Model.Lectures)
+        {
+            <li>
+                <strong>@l.FileName</strong>
+                @if (l.Subject != null)
+                {
+                    <span> — @l.Subject.Name</span>
+                }
+                <details>
+                    <summary>Показать</summary>
+                    <pre style="white-space:pre-wrap">@l.Summary</pre>
+                </details>
+            </li>
+        }
+    </ul>
+}
 
 <h3>Упражнения</h3>
-<table>
-    <thead>
-        <tr><th>Имя</th><th>Предмет</th><th>Действия</th></tr>
-    </thead>
-    <tbody>
-        @foreach (var ex in Model.Exercises)
+@if (Model.Exercises.Count == 0)
+{
+    <p>Пока нет сохранённых упражнений.</p>
+}
+else
+{
+    <ul>
+        @foreach (var e in Model.Exercises)
         {
-            <tr>
-                <td>@ex.FileName</td>
-                <td>@ex.Subject?.Name</td>
-                <td>
-                    <a href="@Url.Action("DetailsExercise", "Library", new { id = ex.Id })">Просмотр</a> |
-                    <a href="@Url.Action("DeleteExercise", "Library", new { id = ex.Id })">Удалить</a>
-                </td>
-            </tr>
+            <li>
+                <strong>@e.FileName</strong>
+                @if (e.Subject != null)
+                {
+                    <span> — @e.Subject.Name</span>
+                }
+                <details>
+                    <summary>Показать</summary>
+                    <pre style="white-space:pre-wrap">@e.ExercisesText</pre>
+                </details>
+            </li>
         }
-    </tbody>
-</table>
+    </ul>
+}

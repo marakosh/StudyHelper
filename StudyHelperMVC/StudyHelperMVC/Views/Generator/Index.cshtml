@@ -1,58 +1,116 @@
 ﻿@{
-    ViewData["Title"] = "Генератор";
+    ViewData["Title"] = "Генератор (реальное время)";
+    var subjects = ViewBag.Subjects as List<StudyHelperMVC.Models.SubjectModel> ?? new();
 }
 
-<h2>Генератор лекций и упражнений</h2>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
 
-<select id="type">
-    <option value="lecture">Лекция</option>
-    <option value="exercise">Упражнение</option>
-</select>
+<h2>Генерация конспектов и упражнений (стрим)</h2>
 
-<input type="text" id="fileName" placeholder="Имя файла" style="width:100%; margin:5px 0;" />
+<div class="card" style="padding:1rem">
+    <form id="genForm" enctype="multipart/form-data">
+        <div>
+            <label>Тип:</label>
+            <select name="kind" id="kind">
+                <option value="lecture">Лекция</option>
+                <option value="exercise">Упражнения</option>
+            </select>
+        </div>
+        <div style="margin-top:8px;">
+            <label>Предмет (опционально):</label>
+            <select name="subjectId" id="subjectId">
+                <option value="">-- без привязки --</option>
+                @foreach (var s in subjects)
+                {
+                    <option value="@s.Id">@s.Name</option>
+                }
+            </select>
+        </div>
+        <div style="margin-top:8px;">
+            <input type="file" name="file" id="file" accept="application/pdf" />
+        </div>
+        <div style="margin-top:8px;">
+            <button type="submit">Сгенерировать</button>
+        </div>
+    </form>
+</div>
 
-<textarea id="inputText" rows="10" style="width:100%" placeholder="Вставьте текст здесь"></textarea>
+<div style="margin-top:16px;">
+    <h3>Результат</h3>
+    <pre id="out" style="white-space:pre-wrap; background:#111; color:#eee; padding:12px; min-height:200px; border-radius:8px;"></pre>
 
-<button id="generateBtn">Сгенерировать</button>
+    <button id="saveBtn" disabled>Сохранить в библиотеку</button>
+</div>
 
-<h3>Результат:</h3>
-<pre id="output" style="white-space: pre-wrap; border:1px solid #ccc; padding:10px;"></pre>
+<script>
+    const form = document.getElementById('genForm');
+    const out = document.getElementById('out');
+    const saveBtn = document.getElementById('saveBtn');
 
-<button id="saveBtn" disabled>Сохранить в библиотеку</button>
+    let lastFileName = null;
+    let lastKind = null;
+    let lastSubjectId = null;
 
-@section Scripts {
-    <script>
-        let generatedContent = "";
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      out.textContent = "";
+      saveBtn.disabled = true;
 
-        document.getElementById("generateBtn").onclick = async () => {
-            const type = document.getElementById("type").value;
-            const text = document.getElementById("inputText").value;
-            document.getElementById("generateBtn").disabled = true;
+      const kind = document.getElementById('kind').value;
+      const subjectId = document.getElementById('subjectId').value || null;
 
-            const resp = await fetch('@Url.Action("Generate", "Generator")', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ type, text })
-            });
+      const f = document.getElementById('file').files[0];
+      if (!f) { out.textContent = "Выберите PDF"; return; }
 
-            const data = await resp.json();
-            generatedContent = data.result;
-            document.getElementById("output").innerText = generatedContent;
-            document.getElementById("saveBtn").disabled = false;
-            document.getElementById("generateBtn").disabled = false;
-        };
+      lastFileName = f.name;
+      lastKind = kind;
+      lastSubjectId = subjectId;
 
-        document.getElementById("saveBtn").onclick = async () => {
-            const type = document.getElementById("type").value;
-            const fileName = document.getElementById("fileName").value;
-            const subjectId = 1; // временно, можно добавить выбор предмета
-            const resp = await fetch('@Url.Action("Save", "Generator")', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ type, fileName, content: generatedContent, subjectId })
-            });
-            const result = await resp.json();
-            alert(result.message);
-        };
-    </script>
-}
+      const formData = new FormData();
+      formData.append('file', f);
+
+      const url = kind === 'lecture' ? '/Generator/StreamLecture' : '/Generator/StreamExercise';
+
+      const resp = await fetch(url, { method: 'POST', body: formData });
+      if (!resp.ok) { out.textContent = 'Ошибка запроса'; return; }
+
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        out.textContent += decoder.decode(value, { stream: true });
+      }
+
+      // Перерисовать формулы KaTeX (авторендер)
+      try { renderMathInElement(document.getElementById('out')); } catch {}
+
+      saveBtn.disabled = false;
+    });
+
+    saveBtn.addEventListener('click', async () => {
+      const content = out.textContent.trim();
+      if (!content) return;
+
+      const data = new URLSearchParams();
+      data.append('kind', lastKind);
+      data.append('fileName', lastFileName ?? (lastKind === 'lecture' ? 'Lecture.pdf' : 'Exercises.pdf'));
+      data.append('content', content);
+      if (lastSubjectId) data.append('subjectId', lastSubjectId);
+
+      const resp = await fetch('/Generator/SaveGenerated', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+        body: data.toString()
+      });
+      if (resp.ok) {
+        alert('Сохранено в библиотеку');
+        window.location.href = '/Library/Index';
+      } else {
+        alert('Ошибка при сохранении');
+      }
+    });
+</script>

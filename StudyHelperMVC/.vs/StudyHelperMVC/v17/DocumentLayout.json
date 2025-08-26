@@ -11,20 +11,20 @@
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\generator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\generator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\services\\gptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\services\\gptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\library\\detailsexercise.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\library\\detailsexercise.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\library\\detailslecture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\library\\detailslecture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\generator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\generator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,32 +35,52 @@
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\controllers\\generatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\lecture\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\lecture\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\services\\chunker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\services\\chunker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\services\\gptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\services\\gptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\services\\pdftextextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\services\\pdftextextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\models\\libraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\models\\libraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\exercises\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\exercises\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\models\\lecturemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\models\\lecturemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\models\\exercisemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\models\\exercisemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\lecture\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\lecture\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\models\\subjectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\models\\subjectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\library\\detailslecture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\library\\detailslecture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\lecture\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\lecture\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\exercises\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\exercises\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\lecture\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\lecture\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\controllers\\exercisescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,24 +115,8 @@
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\migrations\\20250825113332_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\services\\chunker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\services\\chunker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\models\\lecturemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\models\\lecturemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\services\\pdftextextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|solutionrelative:studyhelpermvc\\services\\pdftextextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64839CE2-6B28-4237-B8E4-8F9BCCD17385}|StudyHelperMVC\\StudyHelperMVC.csproj|c:\\users\\user\\source\\repos\\studyhelpermvc\\studyhelpermvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -162,32 +162,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Generator\\Index.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Generator\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Generator\\Index.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Generator\\Index.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAUwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T14:55:38.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DetailsLecture.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T14:54:06.223Z",
+              "Title": "GptService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\GptService.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Services\\GptService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\GptService.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Services\\GptService.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAUwIQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:56:47.242Z",
               "EditorCaption": ""
             },
             {
@@ -198,79 +185,40 @@
               "RelativeDocumentMoniker": "StudyHelperMVC\\Controllers\\GeneratorController.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\GeneratorController.cs",
               "RelativeToolTip": "StudyHelperMVC\\Controllers\\GeneratorController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwCIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAUwIcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T14:48:48.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Result.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T13:59:21.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Result.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T13:59:43.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ExerciseModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\ExerciseModel.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\ExerciseModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\ExerciseModel.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Models\\ExerciseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "LibraryController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LibraryController.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Controllers\\LibraryController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LibraryController.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Controllers\\LibraryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:56:24.21Z",
+              "WhenOpened": "2025-08-25T14:05:42.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.json",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.json",
-              "RelativeToolTip": "StudyHelperMVC\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-24T13:59:48.051Z",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Generator\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Generator\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Generator\\Index.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Generator\\Index.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAUwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T14:55:38.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Program.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Program.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:47:12.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DetailsExercise.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Library\\DetailsExercise.cshtml",
               "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Library\\DetailsExercise.cshtml",
@@ -283,176 +231,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GptService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\GptService.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Services\\GptService.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\GptService.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Services\\GptService.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAADwv4cAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:56:47.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LibraryController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LibraryController.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Controllers\\LibraryController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LibraryController.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Controllers\\LibraryController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T14:05:42.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Library\\Index.cshtml",
               "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Library\\Index.cshtml",
               "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Library\\Index.cshtml",
               "RelativeToolTip": "StudyHelperMVC\\Views\\Library\\Index.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-25T14:07:42.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SubjectModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\SubjectModel.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\SubjectModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\SubjectModel.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Models\\SubjectModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Program.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Program.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:56:29.612Z",
+              "WhenOpened": "2025-08-24T13:47:12.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.json*",
+              "RelativeToolTip": "StudyHelperMVC\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-24T13:59:48.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Upload.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
-              "ViewState": "AgIAADoAAAAAAAAAAAAUwEUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T13:59:14.067Z",
+              "Title": "Chunker.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\Chunker.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Services\\Chunker.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\Chunker.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Services\\Chunker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:56:42.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ExercisesController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\ExercisesController.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Controllers\\ExercisesController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\ExercisesController.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Controllers\\ExercisesController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwDQAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "PdfTextExtractor.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\PdfTextExtractor.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Services\\PdfTextExtractor.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\PdfTextExtractor.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Services\\PdfTextExtractor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:57:37.338Z",
+              "WhenOpened": "2025-08-24T13:56:37.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "LibraryViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\LibraryViewModel.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\LibraryViewModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\LibraryViewModel.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Models\\LibraryViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T14:00:09.006Z",
+              "WhenOpened": "2025-08-25T10:24:53.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LectureController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LectureController.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Controllers\\LectureController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LectureController.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Controllers\\LectureController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAgwEkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:57:18.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "StudyHelperMVC\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAswI4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-25T13:03:00.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T13:00:45.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "_Sidebar.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T13:00:35.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T13:00:52.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "20250825113332_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T11:33:32.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 11,
               "Title": "AppDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Data\\AppDbContextFactory.cs",
               "RelativeDocumentMoniker": "StudyHelperMVC\\Data\\AppDbContextFactory.cs",
@@ -465,59 +322,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T13:00:53.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "LibraryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\LibraryViewModel.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\LibraryViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\LibraryViewModel.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Models\\LibraryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T10:24:53.654Z",
+              "WhenOpened": "2025-08-25T14:00:09.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Chunker.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\Chunker.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Services\\Chunker.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\Chunker.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Services\\Chunker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:56:42.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.Development.json",
-              "RelativeToolTip": "StudyHelperMVC\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-25T10:49:53.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 13,
               "Title": "LectureModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\LectureModel.cs",
               "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\LectureModel.cs",
@@ -530,7 +348,189 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExerciseModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\ExerciseModel.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\ExerciseModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\ExerciseModel.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Models\\ExerciseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:56:24.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SubjectModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\SubjectModel.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\SubjectModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\SubjectModel.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Models\\SubjectModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:56:29.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Exercises\\Result.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T13:59:43.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Lecture\\Result.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T13:59:21.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DetailsLecture.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Library\\DetailsLecture.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T14:54:06.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Upload.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Lecture\\Upload.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwEUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T13:59:14.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ExercisesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\ExercisesController.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Controllers\\ExercisesController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\ExercisesController.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Controllers\\ExercisesController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:57:37.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LectureController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LectureController.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Controllers\\LectureController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Controllers\\LectureController.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Controllers\\LectureController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwEkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:57:18.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "StudyHelperMVC\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAswI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-25T13:03:00.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T13:00:45.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Sidebar.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\_Sidebar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T13:00:35.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T13:00:52.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250825113332_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
+              "RelativeToolTip": "StudyHelperMVC\\Migrations\\20250825113332_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T11:33:32.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "StudyHelperMVC\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T13:00:53.412Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 28,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "StudyHelperMVC\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\appsettings.Development.json",
+              "RelativeToolTip": "StudyHelperMVC\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-25T10:49:53.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\ApplicationUser.cs",
@@ -538,12 +538,11 @@
               "RelativeToolTip": "StudyHelperMVC\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T09:48:50.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:48:50.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "StudyHelperMVC\\Models\\ErrorViewModel.cs",
@@ -551,25 +550,23 @@
               "RelativeToolTip": "StudyHelperMVC\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T14:14:30.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-24T14:14:30.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "StudyHelperMVC",
+              "DocumentIndex": 30,
+              "Title": "StudyHelperMVC.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\StudyHelperMVC.csproj",
               "RelativeDocumentMoniker": "StudyHelperMVC\\StudyHelperMVC.csproj",
               "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\StudyHelperMVC.csproj",
               "RelativeToolTip": "StudyHelperMVC\\StudyHelperMVC.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-25T09:57:50.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:57:50.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "StudyHelperMVC\\Views\\Home\\Index.cshtml",
@@ -577,21 +574,7 @@
               "RelativeToolTip": "StudyHelperMVC\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T13:58:53.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PdfTextExtractor.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\PdfTextExtractor.cs",
-              "RelativeDocumentMoniker": "StudyHelperMVC\\Services\\PdfTextExtractor.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\StudyHelperMVC\\StudyHelperMVC\\Services\\PdfTextExtractor.cs",
-              "RelativeToolTip": "StudyHelperMVC\\Services\\PdfTextExtractor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:56:37.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-24T13:58:53.778Z"
             },
             {
               "$type": "Document",
@@ -603,8 +586,7 @@
               "RelativeToolTip": "StudyHelperMVC\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T13:57:02.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-24T13:57:02.626Z"
             },
             {
               "$type": "Document",
@@ -616,8 +598,7 @@
               "RelativeToolTip": "StudyHelperMVC\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T14:11:23.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-24T14:11:23.674Z"
             },
             {
               "$type": "Document",
@@ -629,8 +610,7 @@
               "RelativeToolTip": "StudyHelperMVC\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T14:11:22.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-24T14:11:22.899Z"
             },
             {
               "$type": "Document",
@@ -642,8 +622,7 @@
               "RelativeToolTip": "StudyHelperMVC\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T05:59:34.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T05:59:34.383Z"
             },
             {
               "$type": "Document",
@@ -655,8 +634,7 @@
               "RelativeToolTip": "StudyHelperMVC\\Views\\Exercises\\Upload.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T13:59:39.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-24T13:59:39.282Z"
             }
           ]
         }

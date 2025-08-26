@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StudyHelperMVC.Models;
 
 namespace StudyHelperMVC.Data;
 
-public class AppDbContext : IdentityDbContext<ApplicationUser>
+public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -12,40 +11,20 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<LectureModel> Lectures => Set<LectureModel>();
     public DbSet<ExerciseModel> Exercises => Set<ExerciseModel>();
 
-    protected override void OnModelCreating(ModelBuilder builder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(builder);
+        base.OnModelCreating(modelBuilder);
 
-        builder.Entity<SubjectModel>(e =>
-        {
-            e.Property(x => x.Name).IsRequired().HasMaxLength(200);
+        modelBuilder.Entity<SubjectModel>()
+            .HasMany(s => s.Lectures)
+            .WithOne(l => l.Subject)
+            .HasForeignKey(l => l.SubjectId)
+            .OnDelete(DeleteBehavior.SetNull);
 
-            e.HasOne(s => s.User)
-             .WithMany(u => u.Subjects)
-             .HasForeignKey(s => s.UserId)
-             .OnDelete(DeleteBehavior.Cascade);
-        });
-
-        builder.Entity<LectureModel>(e =>
-        {
-            e.Property(x => x.FileName).IsRequired().HasMaxLength(300);
-            e.Property(x => x.Summary).IsRequired();
-
-            e.HasOne(l => l.Subject)
-             .WithMany(s => s.Lectures)
-             .HasForeignKey(l => l.SubjectId)
-             .OnDelete(DeleteBehavior.Cascade);
-        });
-
-        builder.Entity<ExerciseModel>(e =>
-        {
-            e.Property(x => x.FileName).IsRequired().HasMaxLength(300);
-            e.Property(x => x.ExercisesText).IsRequired();
-
-            e.HasOne(x => x.Subject)
-             .WithMany(s => s.Exercises)
-             .HasForeignKey(x => x.SubjectId)
-             .OnDelete(DeleteBehavior.Cascade);
-        });
+        modelBuilder.Entity<SubjectModel>()
+            .HasMany(s => s.Exercises)
+            .WithOne(e => e.Subject)
+            .HasForeignKey(e => e.SubjectId)
+            .OnDelete(DeleteBehavior.SetNull);
     }
 }

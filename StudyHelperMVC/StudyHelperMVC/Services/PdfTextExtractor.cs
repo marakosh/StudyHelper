@@ -7,13 +7,15 @@ public class PdfTextExtractor
 {
     public string ExtractText(Stream pdfStream)
     {
-        using var doc = PdfDocument.Open(pdfStream);
+        using var ms = new MemoryStream();
+        pdfStream.CopyTo(ms);
+        ms.Position = 0;
+
         var sb = new StringBuilder();
+        using var doc = PdfDocument.Open(ms.ToArray());
         foreach (var page in doc.GetPages())
-        {
-            if (!string.IsNullOrWhiteSpace(page.Text))
-                sb.AppendLine(page.Text);
-        }
+            sb.AppendLine(page.Text);
+
         return sb.ToString();
     }
 }

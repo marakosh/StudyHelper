@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
-using System.Net.Http.Json;
 
 namespace StudyHelperMVC.Services;
 
@@ -16,16 +16,20 @@ public class GptService
         _config = config;
     }
 
-    // Простая генерация (как у тебя было)
-    public async Task<string> ChatSingleAsync(string userPrompt, string system = "", int? maxOutputTokens = null)
+    private HttpClient CreateClient()
     {
         var client = _httpClientFactory.CreateClient();
         var apiKey = _config["OpenAI:ApiKey"] ?? "";
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
+        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        return client;
+    }
+
+    public async Task<string> ChatSingleAsync(string userPrompt, string system = "", int? maxOutputTokens = null)
+    {
+        var client = CreateClient();
         var model = _config["OpenAI:Model"] ?? "gpt-4.1-nano";
         var maxTokens = maxOutputTokens ?? int.Parse(_config["OpenAI:MaxOutputTokens"] ?? "700");
-
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
-        client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
         var payload = new
         {
@@ -49,85 +53,101 @@ public class GptService
             return $"OpenAI error: {(int)resp.StatusCode} {resp.ReasonPhrase}\n{respText}";
 
         using var doc = JsonDocument.Parse(respText);
-        return doc.RootElement
-                  .GetProperty("choices")[0]
-                  .GetProperty("message")
-                  .GetProperty("content")
-                  .GetString() ?? string.Empty;
+        return doc.RootElement.GetProperty("choices")[0].GetProperty("message").GetProperty("content").GetString() ?? string.Empty;
     }
 
-    // Генерация текста в реальном времени (streaming)
-    public async IAsyncEnumerable<string> StreamChatCompletionAsync(
-        string userPrompt,
-        string system = "",
-        int? maxOutputTokens = null)
+    /// Потоковый ответ как IAsyncEnumerable<string>
+    public async IAsyncEnumerable<string> StreamChatAsync(
+    string userPrompt,
+    string system = "",
+    int? maxOutputTokens = null,
+    [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
-        var client = _httpClientFactory.CreateClient();
-        var apiKey = _config["OpenAI:ApiKey"] ?? "";
-        var model = _config["OpenAI:Model"] ?? "gpt-4o-mini";
-        var maxTokens = maxOutputTokens ?? int.Parse(_config["OpenAI:MaxOutputTokens"] ?? "700");
-
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
+        var client = CreateClient();
+        var model = _config["OpenAI:Model"] ?? "gpt-4.1-mini";
+        var maxTokens = maxOutputTokens ?? int.Parse(_config["OpenAI:MaxOutputTokens"] ?? "1500");
 
         var payload = new
         {
             model,
             messages = new object[]
             {
-                new { role = "system", content = system },
-                new { role = "user", content = userPrompt }
+            new { role = "system", content = system },
+            new { role = "user", content = userPrompt }
             },
             max_tokens = maxTokens,
             temperature = 0.2,
             stream = true
         };
 
-        using var request = new HttpRequestMessage(HttpMethod.Post, "https://api.openai.com/v1/chat/completions");
-        request.Content = JsonContent.Create(payload);
+        using var req = new HttpRequestMessage(HttpMethod.Post, "https://api.openai.com/v1/chat/completions");
+        req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
-        using var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
-        response.EnsureSuccessStatusCode();
+        using var resp = await client.SendAsync(req, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+        resp.EnsureSuccessStatusCode();
 
-        using var stream = await response.Content.ReadAsStreamAsync();
+        using var stream = await resp.Content.ReadAsStreamAsync(cancellationToken);
         using var reader = new StreamReader(stream);
 
         while (!reader.EndOfStream)
         {
             var line = await reader.ReadLineAsync();
             if (string.IsNullOrWhiteSpace(line)) continue;
-            if (line.StartsWith("data: "))
+            if (!line.StartsWith("data:")) continue;
+
+            var json = line.Substring(5).Trim();
+            if (json == "[DONE]") yield break;
+
+            string? piece = null;
+            try
             {
-                var jsonPart = line.Substring("data: ".Length);
-                if (jsonPart == "[DONE]") break;
+                using var chunk = JsonDocument.Parse(json);
+                var delta = chunk.RootElement.GetProperty("choices")[0].GetProperty("delta");
 
-                using var doc = JsonDocument.Parse(jsonPart);
-                var delta = doc.RootElement
-                               .GetProperty("choices")[0]
-                               .GetProperty("delta");
-
-                if (delta.TryGetProperty("content", out var content))
-                    yield return content.GetString() ?? "";
+                if (delta.TryGetProperty("content", out var token))
+                    piece = token.GetString();
             }
+            catch
+            {
+                // Игнорируем битые чанки
+            }
+
+            if (!string.IsNullOrEmpty(piece))
+                yield return piece!;
         }
     }
 
-    // Пример конспекта лекции
+
+    // Компоновка результатов по чанкам
     public async Task<string> CompileLectureSummaryAsync(List<string> chunkSummaries)
     {
         var combined = string.Join("\n\n", chunkSummaries);
         var prompt = $$"""
-Ты — помощник студента, задача которого — создавать конспекты из лекций. Текст: 
+Ты — помощник студента, задача которого — создавать **конспекты из лекций**. Тебе предоставляется выжимка из уже сжатых частей лекции. Выполни следующие шаги:
+
+1. Сократи текст лекции до **максимально компактного конспекта**, сохрани всю важную информацию и ключевые понятия.
+2. Структурируй конспект так, чтобы легко было читать и повторять. Можешь использовать списки, заголовки, подпункты.
+3. В конце конспекта:
+   a) Выпиши все **формулы** (в LaTeX), по возможности с кратким названием.
+   b) Выпиши **ключевые слова**.
+   c) Сформулируй **вопросы по лекции**.
+4. Не добавляй лишнего — только из лекции.
+
 {{combined}}
 """;
         return await ChatSingleAsync(prompt, "Ты структурируешь конспекты лекций.", maxOutputTokens: 3000);
     }
 
-    // Пример упражнений
     public async Task<string> CompileExercisesSummaryAsync(List<string> chunkSummaries)
     {
         var combined = string.Join("\n\n", chunkSummaries);
         var prompt = $$"""
-Ты — помощник студента, задача которого — структурировать упражнения. Текст: 
+Ты — интеллектуальный ассистент по заданиям. На вход — упражнения. Для каждого:
+- Перепиши кратко условие (нумерация).
+- Сгенерируй 1–2 доп. задания по той же теме (с изменёнными числами/формулировкой).
+- Дай ответы и краткие объяснения.
+Формулы — в LaTeX.
+
 {{combined}}
 """;
         return await ChatSingleAsync(prompt, "Ты структурируешь упражнения.", maxOutputTokens: 3000);

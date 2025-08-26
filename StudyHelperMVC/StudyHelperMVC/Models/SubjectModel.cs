@@ -5,10 +5,9 @@ public class SubjectModel
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
 
-    // Владение
-    public string UserId { get; set; } = string.Empty;
-    public ApplicationUser User { get; set; } = null!;
+    // Опционально, пока нет пользователей
+    public string? UserId { get; set; }
 
-    public ICollection<LectureModel> Lectures { get; set; } = new List<LectureModel>();
-    public ICollection<ExerciseModel> Exercises { get; set; } = new List<ExerciseModel>();
+    public List<LectureModel> Lectures { get; set; } = new();
+    public List<ExerciseModel> Exercises { get; set; } = new();
 }

@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StudyHelperMVC.Data;
-using StudyHelperMVC.Models;
 using StudyHelperMVC.Services;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,20 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Identity Core (без UI)
-builder.Services.AddIdentityCore<ApplicationUser>(opt =>
-{
-    opt.User.RequireUniqueEmail = true;
-})
-.AddEntityFrameworkStores<AppDbContext>();
-
+// MVC
 builder.Services.AddControllersWithViews();
 
-// Твои сервисы
-builder.Services.AddScoped<PdfTextExtractor>();
-builder.Services.AddScoped<GptService>();
-builder.Services.AddScoped<Chunker>();
+// HttpClient + сервисы
 builder.Services.AddHttpClient();
+builder.Services.AddScoped<PdfTextExtractor>();
+builder.Services.AddScoped<Chunker>();
+builder.Services.AddScoped<GptService>();
 
 var app = builder.Build();
 
@@ -38,8 +29,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();
-app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
